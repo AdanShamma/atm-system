@@ -173,19 +173,18 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/999
 
 ---
 
-## Demo Flow
+## Demo Flow:
 
-1. Check balance of `12345` → see 500.
-2. Deposit 200 → new balance 700.
-3. Withdraw 100 → new balance 600.
-4. Check balance → confirm 600.
-5. Try to withdraw 1000 → error `Insufficient funds`.
-6. Check balance of invalid account `99999` → error `Account not found`.
+1. Check balance of `12345` : see 500.
+2. Deposit 200 : new balance 700.
+3. Withdraw 100: new balance 600.
+4. Check balance: confirm 600.
+5. Try to withdraw 1000: error `Insufficient funds`.
+6. Check balance of invalid account `99999`: error `Account not found`.
 
 ---
 
-## Notes / Assumptions
-
+## Notes / Assumptions:
 1. Server-side only no frontend.
 2. Accounts are in memory and reset on server restart.
 3. Example accounts: `12345` with 500, `67890` with 1000.
