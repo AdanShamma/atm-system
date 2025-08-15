@@ -254,4 +254,3 @@ curl -X POST https://web-production-ec481.up.railway.app/accounts/12345/withdraw
 ```
 
 5. Send the request and view the JSON response.
->>>>>>> 2d49578 (Update README and add test files)
