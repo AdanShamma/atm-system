@@ -189,7 +189,6 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/999
 2. Accounts are in memory and reset on server restart.
 3. Example accounts: `12345` with 500, `67890` with 1000.
 4. Error handling included for insufficient funds, negative amounts, and invalid accounts.
-<<<<<<< HEAD
 =======
 
 ## Approach
