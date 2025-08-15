@@ -1,14 +1,42 @@
-ATM System Submission
+ATM System Submission – Final Version
 
 GitHub Repository:
-https://github.com/AdanShamma/atm-system
+[https://github.com/AdanShamma/atm-system](https://github.com/AdanShamma/atm-system)
 
 Live API URL:
-https://web-production-ec481.up.railway.app/
+[https://web-production-ec481.up.railway.app/](https://web-production-ec481.up.railway.app/)
 
-README Summary:
-- Detailed explanation of approach, design decisions, and challenges faced included in the README.
-- The API allows checking balance, depositing money, and withdrawing money via REST endpoints.
-- Instructions for executing API calls included with examples using curl, PowerShell, and Postman.
+Project Overview:
+This project is a Flask-based RESTful API simulating a simple ATM system. It allows users to:
 
-All code, tests, and documentation are available in the GitHub repository above.
+* Check account balance
+* Deposit money
+* Withdraw money
+
+All account data is stored in-memory, providing a lightweight, fast, and easy-to-test environment.
+
+Key Features:
+
+* Server-side Implementation only; no frontend is included.
+* Robust error handling for invalid accounts, insufficient funds, and non-positive amounts.
+* Comprehensive automated tests using `pytest` covering valid operations and edge cases.
+* Deployed on Railway with a publicly accessible live API URL.
+
+README Highlights:
+
+* Detailed explanation of approach, design decisions, and rationale for using Flask and in-memory storage.
+* Documentation of challenges faced, such as data persistence trade-offs, error response formatting, and deployment considerations.
+* Step-by-step instructions to execute API calls using `curl`, PowerShell, and Postman.
+* Sample responses for all endpoints, including both success and error scenarios.
+
+Testing & Validation:
+
+* All endpoints manually tested and validated via automated tests.
+* Edge cases covered: overdraft attempts, invalid account numbers, and invalid deposit/withdraw amounts.
+
+Submission Notes:
+
+* All source code, tests, and documentation are included in the GitHub repository.
+* The live API is fully deployed and accessible via the provided URL.
+
+This submission fulfills the assignment requirements for server-side implementation, deployment, testing, and documentation of a mini ATM system.
