@@ -1,0 +1,14 @@
+ATM System Submission
+
+GitHub Repository:
+https://github.com/AdanShamma/atm-system
+
+Live API URL:
+https://web-production-ec481.up.railway.app/
+
+README Summary:
+- Detailed explanation of approach, design decisions, and challenges faced included in the README.
+- The API allows checking balance, depositing money, and withdrawing money via REST endpoints.
+- Instructions for executing API calls included with examples using curl, PowerShell, and Postman.
+
+All code, tests, and documentation are available in the GitHub repository above.
