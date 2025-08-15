@@ -70,9 +70,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/123
 
 {
 
-&nbsp; "account\_number": "12345",
+ "account\_number": "12345",
 
-&nbsp; "balance": 600.0
+ "balance": 600.0
 
 }
 
@@ -84,11 +84,11 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/123
 
 Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/12345/deposit" `
 
-&nbsp;   -Method POST `
+   -Method POST `
 
-&nbsp;   -ContentType "application/json" `
+   -ContentType "application/json" `
 
-&nbsp;   -Body '{"amount":200}'
+   -Body '{"amount":200}'
 
 ```
 
@@ -100,9 +100,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/123
 
 {
 
-&nbsp; "account\_number": "12345",
+ "account\_number": "12345",
 
-&nbsp; "new\_balance": 800.0
+ "new\_balance": 800.0
 
 }
 
@@ -114,26 +114,19 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/123
 
 Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/12345/withdraw" `
 
-&nbsp;   -Method POST `
-
-&nbsp;   -ContentType "application/json" `
-
-&nbsp;   -Body '{"amount":100}'
+-Method POST `
+-ContentType "application/json" `
+-Body '{"amount":100}'
 
 ```
 
 \*Response:\*
 
 
-
 ```json
-
 {
-
-&nbsp; "account\_number": "12345",
-
-&nbsp; "new\_balance": 700.0
-
+"account\_number": "12345",
+"new\_balance": 700.0
 }
 
 ```
@@ -157,10 +150,8 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 ```json
 
 {
-
-&nbsp; "account\_number": "67890",
-
-&nbsp; "balance": 1000.0
+"account\_number": "67890",
+"balance": 1000.0
 
 }
 
@@ -174,11 +165,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 
 Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/67890/deposit" `
 
-&nbsp;   -Method POST `
-
-&nbsp;   -ContentType "application/json" `
-
-&nbsp;   -Body '{"amount":300}'
+-Method POST `
+-ContentType "application/json" `
+-Body '{"amount":300}'
 
 ```
 
@@ -188,9 +177,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 
 {
 
-&nbsp; "account\_number": "67890",
+ "account\_number": "67890",
 
-&nbsp; "new\_balance": 1300.0
+ "new\_balance": 1300.0
 
 }
 
@@ -203,12 +192,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 ```powershell
 
 Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/67890/withdraw" `
-
-&nbsp;   -Method POST `
-
-&nbsp;   -ContentType "application/json" `
-
-&nbsp;   -Body '{"amount":500}'
+ -Method POST `
+-ContentType "application/json" `
+-Body '{"amount":500}'
 
 ```
 
@@ -219,10 +205,8 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 ```json
 
 {
-
-&nbsp; "account\_number": "67890",
-
-&nbsp; "new\_balance": 800.0
+"account\_number": "67890",
+"new\_balance": 800.0
 
 }
 
@@ -244,11 +228,9 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/678
 
 Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/12345/withdraw" `
 
-&nbsp;   -Method POST `
-
-&nbsp;   -ContentType "application/json" `
-
-&nbsp;   -Body '{"amount":1000}'
+ -Method POST `
+ -ContentType "application/json" `
+-Body '{"amount":1000}'
 
 ```
 
@@ -260,7 +242,7 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/123
 
 {
 
-&nbsp; "error": "Insufficient funds"
+ "error": "Insufficient funds"
 
 }
 
@@ -288,7 +270,7 @@ Invoke-RestMethod -Uri "https://web-production-ec481.up.railway.app/accounts/999
 
 {
 
-&nbsp; "error": "Account not found"
+ "error": "Account not found"
 
 }
 
